@@ -21,9 +21,9 @@ const main = () => {
       const playerOne = new Player(player1);
       player1 = playerOne;
       p = player1;
-      divPlayerName1 = "";
-      divPlayerName1.push(p);
-      console.log(p);
+      divPlayerName1.innerHTML = "";
+      divPlayerName1.append(p.name);
+      console.log(p.name);
     }
   };
 
@@ -37,9 +37,9 @@ const main = () => {
       const playerTwo = new Player(player2);
       player2 = playerTwo;
       p = player2;
-      divPlayerName2 = "";
-      divPlayerName2.push(p);
-      console.log(player2);
+      divPlayerName2.innerHTML = "";
+      divPlayerName2.append(p.name);
+      console.log(player2.name);
     }
   };
 
