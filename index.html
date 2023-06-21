@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best mmo ever !</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="players">
+        <div class="player">
+          <div class="player-name">
+            <input type="text" id="name-input-1" name="name-input-1" required />
+            <label for="name-input-1">Nom du joueur</label>
+          </div>
+
+          <div class="character-selector hidden" id="select-container-1"></div>
+
+          <div class="stats hidden" id="stats-1"></div>
+        </div>
+
+        <div class="player">
+          <div class="player-name">
+            <input type="text" id="name-input-2" name="name-input-2" required />
+            <label for="name-input-2">Nom du joueur</label>
+          </div>
+
+          <div class="character-selector hidden" id="select-container-2"></div>
+
+          <div class="stats hidden" id="stats-2"></div>
+        </div>
+      </div>
+
+      <div id="fight-btn" class="fight hidden">
+        <button type="button">START FIGHT !</button>
+      </div>
+
+      <div id="turn-btn" class="turn hidden">
+        <button type="button"></button>
+      </div>
+
+      <ul id="fight-log" class="fight-log"></ul>
+    </div>
+  </body>
+</html>
