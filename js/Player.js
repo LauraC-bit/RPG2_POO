@@ -1,7 +1,7 @@
 class Player {
   constructor(name) {
     this._name = name;
-    // this._character = character;
+    this._character = null;
   }
   get name() {
     return this._name;

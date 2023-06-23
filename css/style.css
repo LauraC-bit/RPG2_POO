@@ -169,3 +169,15 @@ button {
   border-radius: 4px;
   box-shadow: 0 0 0 1px var(--red);
 }
+
+.blue {
+  color: blue; 
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green; 
+}
