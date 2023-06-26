@@ -49,17 +49,18 @@ class Character {
     this._color = in_color;
   }
 
-  attack(atk, speed, int) {
-    let result = atk / 2;
-    result = result * speed;
+  attack() {
+    let result = this._atk / 2;
+    result = result * this._spd;
     result = result / 100;
-    result = result + int / 10;
+    result = result + this._int / 10;
+    return result;
   }
 
-  dodge(agi) {
+  dodge() {
     let nbr = Math.floor(Math.random() * 100);
-    if (nbr < agi) {
-      return "true";
+    if (nbr < this._agi) {
+      return true;
     } else {
       return false;
     }
